@@ -2,7 +2,7 @@
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 40);
-});
+}, { passive: true });
 
 // Hamburger menu
 const hamburger = document.getElementById('hamburger');
@@ -18,7 +18,52 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Scroll reveal
+// ===== HERO SLIDER =====
+const slides = document.querySelectorAll('.slide');
+const dots   = document.querySelectorAll('.dot');
+let current  = 0;
+let timer    = null;
+
+function goTo(index) {
+  slides[current].classList.remove('active');
+  dots[current].classList.remove('active');
+  current = (index + slides.length) % slides.length;
+  slides[current].classList.add('active');
+  dots[current].classList.add('active');
+  // Restart progress bar
+  const hero = document.querySelector('.hero');
+  hero.style.animation = 'none';
+  void hero.offsetWidth; // reflow
+  hero.style.animation = '';
+}
+
+function startAuto() {
+  clearInterval(timer);
+  timer = setInterval(() => goTo(current + 1), 5000);
+}
+
+document.getElementById('sliderNext').addEventListener('click', () => {
+  goTo(current + 1);
+  startAuto();
+});
+document.getElementById('sliderPrev').addEventListener('click', () => {
+  goTo(current - 1);
+  startAuto();
+});
+dots.forEach(dot => {
+  dot.addEventListener('click', () => {
+    goTo(parseInt(dot.dataset.index));
+    startAuto();
+  });
+});
+
+// Pause on hover
+document.querySelector('.hero').addEventListener('mouseenter', () => clearInterval(timer));
+document.querySelector('.hero').addEventListener('mouseleave', startAuto);
+
+startAuto();
+
+// ===== SCROLL REVEAL =====
 const revealEls = document.querySelectorAll(
   '.feature-card, .vm-card, .service-card, .sector-item, .team-card, .about-text, .about-what, .contact-info, .contact-form'
 );
@@ -35,7 +80,7 @@ const observer = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => observer.observe(el));
 
-// Contact form
+// ===== CONTACT FORM =====
 function handleSubmit(e) {
   e.preventDefault();
   const btn = e.target.querySelector('button[type="submit"]');
@@ -48,19 +93,3 @@ function handleSubmit(e) {
     btn.disabled = false;
   }, 1200);
 }
-
-// Active nav link highlight on scroll
-const sections = document.querySelectorAll('section[id]');
-const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(section => {
-    if (window.scrollY >= section.offsetTop - 100) current = section.id;
-  });
-  navAnchors.forEach(a => {
-    a.style.color = '';
-    if (a.getAttribute('href') === '#' + current) {
-      a.style.color = navbar.classList.contains('scrolled') ? 'var(--gold)' : 'var(--gold)';
-    }
-  });
-}, { passive: true });

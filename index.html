@@ -34,21 +34,79 @@
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO SLIDER -->
   <section class="hero" id="home">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <p class="hero-pre">Canadian-Based. Internationally Connected.</p>
-      <h1>Connecting Canadian Institutions<br>with Global Opportunities</h1>
-      <p class="hero-sub">Through strategic partnerships, educational collaboration, and international advisory services, we help institutions connect beyond borders and advance Canada's engagement at the global level.</p>
-      <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary">Contact Us</a>
-        <a href="#services" class="btn btn-outline">Explore Our Services</a>
+
+    <!-- Slide 1 — Toronto Skyline -->
+    <div class="slide active" data-city="Toronto, Ontario">
+      <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="slide-overlay"></div>
+      <div class="container slide-content">
+        <p class="hero-pre">Canadian-Based. Internationally Connected.</p>
+        <h1>Connecting Canadian Institutions<br>with Global Opportunities</h1>
+        <p class="hero-sub">Through strategic partnerships, educational collaboration, and international advisory services, we help institutions connect beyond borders and advance Canada's engagement at the global level.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-hero-primary">Contact Us</a>
+          <a href="#services" class="btn btn-hero-outline">Explore Our Services</a>
+        </div>
       </div>
     </div>
-    <div class="hero-scroll-indicator">
-      <span></span>
+
+    <!-- Slide 2 — Ottawa Parliament Hill -->
+    <div class="slide" data-city="Ottawa, Ontario">
+      <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1568133726849-ec1b8a7f7a9d?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="slide-overlay"></div>
+      <div class="container slide-content">
+        <p class="hero-pre">Our Services</p>
+        <h1>Partnership<br>Development</h1>
+        <p class="hero-sub">We facilitate collaboration between Canadian and international educational institutions through academic partnerships, institutional introductions, and engagement initiatives.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-hero-primary">Contact Us</a>
+          <a href="#services" class="btn btn-hero-outline">Explore Our Services</a>
+        </div>
+      </div>
     </div>
+
+    <!-- Slide 3 — Calgary Skyline -->
+    <div class="slide" data-city="Calgary, Alberta">
+      <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="slide-overlay"></div>
+      <div class="container slide-content">
+        <p class="hero-pre">Our Services</p>
+        <h1>Advisory &<br>Consulting</h1>
+        <p class="hero-sub">Strategic advisory services to organizations seeking to expand their international engagement and institutional cooperation.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-hero-primary">Contact Us</a>
+          <a href="#services" class="btn btn-hero-outline">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 — Vancouver Skyline -->
+    <div class="slide" data-city="Vancouver, British Columbia">
+      <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1559511260-66a654ae982a?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="slide-overlay"></div>
+      <div class="container slide-content">
+        <p class="hero-pre">Our Services</p>
+        <h1>International<br>Collaboration Support</h1>
+        <p class="hero-sub">Assisting organizations in establishing and managing international cooperation initiatives across borders and institutions.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-hero-primary">Contact Us</a>
+          <a href="#services" class="btn btn-hero-outline">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Previous slide">&#8592;</button>
+    <button class="slider-arrow slider-next" id="sliderNext" aria-label="Next slide">&#8594;</button>
+    <div class="slider-dots" id="sliderDots">
+      <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3"></button>
+      <button class="dot" data-index="3" aria-label="Slide 4"></button>
+    </div>
+
   </section>
 
   <!-- WHY CHOOSE US -->
