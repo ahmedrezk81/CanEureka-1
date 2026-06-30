@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CanEureka Global Educational Services — Education • Advisory • Partnerships</title>
+  <meta name="description" content="Connecting Canadian institutions with global opportunities through strategic partnerships, educational collaboration, and international advisory services." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo-link">
+        <img src="logo.png" alt="CanEureka Global — Education, Advisory, Partnerships" class="logo-img" />
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+        <a href="https://ed-eureka.com/" target="_blank" rel="noopener" class="nav-study-abroad">Study in Canada</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <section class="hero" id="home">
+
+    <!-- Slide 1 — Parliament Hill, Ottawa -->
+    <div class="slide active" data-city="Parliament Hill, Ottawa">
+      <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1613059488547-0fc691db5231?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="slide-overlay"></div>
+      <div class="container slide-content">
+        <p class="hero-pre">Canadian-Based. Internationally Connected.</p>
+        <h1>Connecting Canadian Institutions<br>with Global Opportunities</h1>
+        <p class="hero-sub">We connect institutions with global opportunities through strategic partnerships, educational collaboration, and international advisory services.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-hero-primary">Contact Us</a>
+          <a href="#services" class="btn btn-hero-outline">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 — Toronto skyline & CN Tower -->
+    <div class="slide" data-city="Toronto & the CN Tower">
+      <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="slide-overlay"></div>
+      <div class="container slide-content">
+        <p class="hero-pre">Our Services</p>
+        <h1>Partnership<br>Development</h1>
+        <p class="hero-sub">We facilitate collaboration between Canadian and international educational institutions through academic partnerships, institutional introductions, and engagement initiatives.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-hero-primary">Contact Us</a>
+          <a href="#services" class="btn btn-hero-outline">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 — University of Calgary -->
+    <div class="slide" data-city="University of Calgary">
+      <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1694793179193-1be68f8f5516?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="slide-overlay"></div>
+      <div class="container slide-content">
+        <p class="hero-pre">Our Services</p>
+        <h1>Advisory &<br>Consulting</h1>
+        <p class="hero-sub">Strategic advisory services to organizations seeking to expand their international engagement and institutional cooperation.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-hero-primary">Contact Us</a>
+          <a href="#services" class="btn btn-hero-outline">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 — University of British Columbia -->
+    <div class="slide" data-city="Univ. of British Columbia, Vancouver">
+      <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1753246786469-6af4ef107105?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="slide-overlay"></div>
+      <div class="container slide-content">
+        <p class="hero-pre">Our Services</p>
+        <h1>International<br>Collaboration Support</h1>
+        <p class="hero-sub">Assisting organizations in establishing and managing international cooperation initiatives across borders and institutions.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-hero-primary">Contact Us</a>
+          <a href="#services" class="btn btn-hero-outline">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Previous slide">&#8592;</button>
+    <button class="slider-arrow slider-next" id="sliderNext" aria-label="Next slide">&#8594;</button>
+    <div class="slider-dots" id="sliderDots">
+      <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3"></button>
+      <button class="dot" data-index="3" aria-label="Slide 4"></button>
+    </div>
+
+  </section>
+
+  <!-- ABOUT US -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">About Us</span>
+        <h2>Who We Are</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">CanEureka Global Educational Services is a Canadian consulting and strategic advisory firm based in Ontario, Canada, specializing in international educational collaboration, institutional partnerships, and professional advisory services.</p>
+          <p>Our team combines deep expertise across multiple domains to deliver results that matter for your institution's international ambitions.</p>
+          <ul class="expertise-list">
+            <li><span class="check">✓</span> Partnership Development</li>
+            <li><span class="check">✓</span> International Engagement</li>
+            <li><span class="check">✓</span> Institutional Relations</li>
+            <li><span class="check">✓</span> Operational Coordination</li>
+            <li><span class="check">✓</span> Strategic Business Development</li>
+          </ul>
+        </div>
+        <div class="about-what">
+          <div class="what-we-do-card">
+            <h3>What We Do</h3>
+            <p>Our role is to serve as a <strong>trusted bridge</strong> between Canadian institutions and global partners, with a special focus on the MENA region — providing professional guidance and coordination to:</p>
+            <div class="what-tags">
+              <span>Educational Institutions</span>
+              <span>Healthcare Organizations</span>
+              <span>Government & NGOs</span>
+              <span>Professional Training Providers</span>
+              <span>International Partners</span>
+              <span>Research & Innovation Centers</span>
+            </div>
+            <p class="what-footer">We support international cooperation projects, coordinate educational and professional initiatives, facilitate institutional engagement, and help organizations establish strategic partnerships.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us" id="why">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Why Choose CanEureka Global Educational Services</span>
+        <h2>Canadian-Based.<br>Internationally Connected.</h2>
+        <p>We understand both the Canadian institutional environment and the importance of building effective international relationships.</p>
+        <p>We help leaders address challenges across different educational ecosystems.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="21" stroke="#1B3A6B" stroke-width="2"/><ellipse cx="24" cy="24" rx="8" ry="21" stroke="#1B3A6B" stroke-width="1.5" fill="none"/><line x1="3" y1="24" x2="45" y2="24" stroke="#C9A336" stroke-width="1.5"/><line x1="5" y1="16" x2="43" y2="16" stroke="#C9A336" stroke-width="1" opacity="0.6"/><line x1="5" y1="32" x2="43" y2="32" stroke="#C9A336" stroke-width="1" opacity="0.6"/></svg>
+          </div>
+          <h3>Global Network</h3>
+          <p>Strong institutional networking that spans educational systems, healthcare, government, and research organizations worldwide.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#1B3A6B" stroke-width="2"/><path d="M16 24 L22 30 L32 18" stroke="#C9A336" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Strategic Partnership Facilitation</h3>
+          <p>We connect the right institutions at the right time, ensuring partnerships are built on shared goals and mutual benefit.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="#1B3A6B" stroke-width="2" fill="none"/><circle cx="24" cy="24" r="7" fill="#C9A336" opacity="0.15"/><circle cx="24" cy="24" r="3" fill="#C9A336"/><path d="M24 6 L24 10M24 38 L24 42M6 24 L10 24M38 24 L42 24" stroke="#C9A336" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Cross-Border Collaboration</h3>
+          <p>Effective support for cross-border initiatives, ensuring smooth coordination between Canadian and international stakeholders.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="18" cy="18" r="8" stroke="#1B3A6B" stroke-width="2"/><circle cx="30" cy="30" r="8" stroke="#C9A336" stroke-width="2"/><path d="M24 22 L26 24M22 26 L24 28" stroke="#1B3A6B" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 1"/></svg>
+          </div>
+          <h3>Trusted Advisory</h3>
+          <p>Professional guidance rooted in deep knowledge of Canadian institutional environments and international engagement best practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION & MISSION -->
+  <section class="vision-mission">
+    <div class="container vm-grid">
+      <div class="vm-card vm-vision">
+        <div class="vm-icon">
+          <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="16" stroke="white" stroke-width="2"/><circle cx="32" cy="32" r="6" fill="white" opacity="0.3"/><circle cx="32" cy="32" r="2" fill="white"/><path d="M32 10 L32 4M32 60 L32 54M10 32 L4 32M60 32 L54 32" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Our Vision</h3>
+        <p>To become a trusted Canadian platform for global educational partnerships, institutional collaboration, and international advisory services.</p>
+      </div>
+      <div class="vm-card vm-mission">
+        <div class="vm-icon">
+          <svg viewBox="0 0 64 64" fill="none"><path d="M16 48 L16 24 C16 16 22 10 32 10 C42 10 48 16 48 24 L48 48" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M12 48 L52 48" stroke="white" stroke-width="2" stroke-linecap="round"/><circle cx="32" cy="24" r="6" stroke="white" stroke-width="2"/></svg>
+        </div>
+        <h3>Our Mission</h3>
+        <p>To support organizations in building meaningful and sustainable international partnerships through strategic advisory, coordination, and collaborative engagement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-label">What We Offer</span>
+        <h2>Our Services</h2>
+        <p>Comprehensive support for Canadian institutions and international partners with a focus on the MENA region at every stage of collaboration.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-number">01</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" fill="none"/><path d="M14 24 L22 32 L36 16" stroke="#C9A336" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Partnership Facilitation</h3>
+          <p>We facilitate collaboration between Canadian and international educational institutions.</p>
+          <ul>
+            <li>Academic partnership development</li>
+            <li>Institutional introductions</li>
+            <li>Collaborative program support</li>
+            <li>Training and exchange coordination</li>
+            <li>Educational engagement initiatives</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-number">02</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="10" width="32" height="28" rx="3" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/><path d="M16 20 H32M16 26 H26M16 32 H28" stroke="#C9A336" stroke-width="2" stroke-linecap="round"/><circle cx="36" cy="12" r="5" fill="#C9A336"/><path d="M34 12 L35.5 13.5 L38.5 10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Advisory & Consulting</h3>
+          <p>Strategic advisory services to organizations seeking to expand their international engagement and institutional cooperation.</p>
+          <ul>
+            <li>Partnership strategy</li>
+            <li>International engagement planning</li>
+            <li>Institutional development support</li>
+            <li>Market and opportunity assessment</li>
+            <li>Stakeholder advisory services</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-number">03</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="16" cy="24" r="8" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/><circle cx="32" cy="24" r="8" stroke="#C9A336" stroke-width="1.5"/><path d="M20 24 C22 20 26 20 28 24M20 24 C22 28 26 28 28 24" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" fill="none"/></svg>
+          </div>
+          <h3>International Collaboration Support</h3>
+          <p>Assisting organizations in establishing and managing international cooperation initiatives.</p>
+          <ul>
+            <li>Cross-border institutional collaboration</li>
+            <li>Delegation coordination</li>
+            <li>Partnership facilitation</li>
+            <li>Strategic introductions</li>
+            <li>Project support services</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-number">04</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="14" width="32" height="24" rx="2" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/><path d="M16 14 L16 10 C16 8 18 8 18 8 H30 C32 8 32 10 32 10 L32 14" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/><circle cx="24" cy="26" r="5" stroke="#C9A336" stroke-width="2"/><path d="M21 26 L23 28 L27.5 23" stroke="#C9A336" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Delegation & Program Coordination</h3>
+          <p>End-to-end coordination of institutional meetings, visits, and collaborative engagement activities.</p>
+          <ul>
+            <li>Educational visits</li>
+            <li>Professional delegations</li>
+            <li>Institutional meetings</li>
+            <li>Conferences & workshops</li>
+            <li>Collaborative engagement activities</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORS WE SERVE -->
+  <section class="sectors">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Who We Serve</span>
+        <h2>Sectors We Support</h2>
+      </div>
+      <div class="sectors-grid">
+        <div class="sector-item">
+          <div class="sector-icon">🎓</div>
+          <span>Educational Institutions</span>
+        </div>
+        <div class="sector-item">
+          <div class="sector-icon">🏥</div>
+          <span>Healthcare Organizations</span>
+        </div>
+        <div class="sector-item">
+          <div class="sector-icon">🏛️</div>
+          <span>Government & NGOs</span>
+        </div>
+        <div class="sector-item">
+          <div class="sector-icon">🔬</div>
+          <span>Research & Innovation Centers</span>
+        </div>
+        <div class="sector-item">
+          <div class="sector-icon">📋</div>
+          <span>Professional Training Providers</span>
+        </div>
+        <div class="sector-item">
+          <div class="sector-icon">🌐</div>
+          <span>International Partners</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Meet Our Experts</span>
+        <h2>Meet Our Experts</h2>
+        <p>Our experts bring decades of combined experience in international education, institutional partnerships, and strategic advisory services.</p>
+      </div>
+      <div class="team-placeholder">
+        <div class="team-card placeholder-card">
+          <div class="avatar-placeholder"></div>
+          <div class="team-info">
+            <div class="placeholder-line w60"></div>
+            <div class="placeholder-line w40"></div>
+          </div>
+        </div>
+        <div class="team-card placeholder-card">
+          <div class="avatar-placeholder"></div>
+          <div class="team-info">
+            <div class="placeholder-line w60"></div>
+            <div class="placeholder-line w40"></div>
+          </div>
+        </div>
+        <div class="team-card placeholder-card">
+          <div class="avatar-placeholder"></div>
+          <div class="team-info">
+            <div class="placeholder-line w60"></div>
+            <div class="placeholder-line w40"></div>
+          </div>
+        </div>
+      </div>
+      <p class="team-coming-soon">Team profiles coming soon.</p>
+    </div>
+  </section>
+
+  <!-- STUDY ABROAD BANNER -->
+  <section class="study-abroad-banner">
+    <div class="container sa-inner">
+      <div class="sa-text">
+        <span class="sa-label">Explore More</span>
+        <h2>Study in Canada Opportunities</h2>
+        <p>Discover international education pathways and study abroad programs through our partner platform Ed-Eureka.</p>
+      </div>
+      <a href="https://ed-eureka.com/" target="_blank" rel="noopener" class="btn btn-gold">Visit Ed-Eureka <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get In Touch</span>
+        <h2>Contact Us</h2>
+        <p>Ready to explore how CanEureka Global Educational Services can support your institution's international engagement? We'd love to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="#1B3A6B" stroke-width="1.5"/><circle cx="12" cy="9" r="2.5" stroke="#C9A336" stroke-width="1.5"/></svg>
+            </div>
+            <div>
+              <strong>Location</strong>
+              <span>Ontario, Canada</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z" stroke="#1B3A6B" stroke-width="1.5"/><path d="M22 6L12 13 2 6" stroke="#C9A336" stroke-width="1.5"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <span>info@caneureka.com</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="org">Organization</label>
+              <input type="text" id="org" name="org" placeholder="Your institution or organization" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Select a topic</option>
+              <option>Partnership Facilitation</option>
+              <option>Advisory & Consulting</option>
+              <option>International Collaboration</option>
+              <option>Delegation Coordination</option>
+              <option>General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your institution and how we can help..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <div class="form-success" id="form-success">Thank you! We'll be in touch shortly.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo.png" alt="CanEureka Global" class="footer-logo-img" />
+        <p class="footer-tagline">Connecting opportunities.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <a href="#services">Partnership Facilitation</a>
+        <a href="#services">Advisory & Consulting</a>
+        <a href="#services">International Collaboration</a>
+        <a href="#services">Delegation Coordination</a>
+      </div>
+      <div class="footer-links">
+        <h4>External</h4>
+        <a href="https://ed-eureka.com/" target="_blank" rel="noopener">Study in Canada (Ed-Eureka)</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 CanEureka Global Educational Services. All rights reserved. Ontario, Canada.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
