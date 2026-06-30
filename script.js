@@ -57,9 +57,14 @@ dots.forEach(dot => {
   });
 });
 
-// Pause on hover
-document.querySelector('.hero').addEventListener('mouseenter', () => clearInterval(timer));
-document.querySelector('.hero').addEventListener('mouseleave', startAuto);
+// Pause on hover over the slider controls (not the whole hero, which fills the
+// viewport — that would keep autoplay paused whenever the cursor is on screen).
+[document.querySelector('.slider-prev'),
+ document.querySelector('.slider-next'),
+ document.getElementById('sliderDots')].forEach(el => {
+  el.addEventListener('mouseenter', () => clearInterval(timer));
+  el.addEventListener('mouseleave', startAuto);
+});
 
 startAuto();
 
